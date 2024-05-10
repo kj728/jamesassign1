@@ -1,0 +1,176 @@
+@import url(https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+
+* {
+    padding: 0;
+    margin: 0;
+
+    body {
+        font-family: "Barlow Semi Condensed";
+    }
+}
+
+body {
+    background-color: rgba(0, 255, 255, 0);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    grid-template-rows: 50% 50%;
+    width: 80%;
+    height: 90%;
+    background-color: rgba(137, 43, 226, 0);
+    border-radius: 10px;
+    padding: 1px;
+    grid-template-areas:
+        'myArea1 myArea1 myArea2 myArea3'
+        'myArea4 myArea5 myArea5 myArea3';
+    padding: 5px;
+     justify-items: center; 
+     /* align-items: center;   */
+}
+
+.grid-item {
+    background-color: rgb(41, 235, 23);
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.item1 {
+    grid-area: myArea1;
+    background-color: hsl(263, 55%, 52%);
+    background-image: url('./images/bg-pattern-quotation.svg');
+    background-size: 18% 41%;
+    background-repeat: no-repeat;
+    background-position: 75% 0%;
+    padding: 15px 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.item2 {
+    grid-area: myArea2;
+    background-color:hsl(217, 19%, 35%);
+    padding: 15px 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.item3 {
+    grid-area: myArea3;
+    background-color: hsl(0, 0%, 100%);
+    padding: 15px 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   
+}
+
+.item4 {
+    grid-area: myArea4;
+    background-color: hsl(0, 0%, 100%);
+    padding: 15px 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.item5 {
+    grid-area: myArea5;
+    background-color:hsl(219, 29%, 14%);
+    padding: 15px 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.user-card {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 10px;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.name h3 {
+    color:hsl(0, 0%, 100%);
+    font-weight: 500;
+    font-size: 17px;
+
+}
+.name p {
+    color: hsla(0, 0%, 100%, 0.7);
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.header img {
+    height: 40px;
+    height: 40px;
+    padding: 3px;
+    background-color: rgba(255, 255, 255, 0.555);
+    border-radius: 50%;
+}
+
+.header-unique {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.header-unique img{
+    height: 40px;
+    height: 40px;
+    padding: 3px;
+    background-color: hsla(263, 55%, 52%, 0.603);
+    border-radius: 50%;
+
+}
+
+.testimonial h2 {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 15px;
+    color: hsl(0, 0%, 100%);
+}
+
+.testimonial p {
+    font-weight: 500;
+    font-size: 13px;
+    margin: 10px;
+    color:hsla(0, 0%, 100%, 0.774);
+
+}
+.name-unique h3 {
+    color:  hsl(217, 19%, 35%);
+    font-weight: 500;
+    font-size: 17px;
+
+}
+.name-unique p {
+    color: hsla(217, 19%, 35%, 0.7);
+    font-weight: 400;
+    font-size: 13px;
+
+}
+
+.testimonial-unique h2 {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 15px;
+    color:  hsl(217, 19%, 35%);
+
+}
+.testimonial-unique p {
+    color: hsla(217, 19%, 35%, 0.7);
+    font-weight: 500;
+    margin: 15px;
+    font-size: 13px;
+
+}
